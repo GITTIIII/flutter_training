@@ -23,6 +23,13 @@ flutter:
   assets:
      - images/
 
+  fonts:
+     - family: PlaywriteGBS
+       fonts:
+         - asset: fonts/PlaywriteGBS-VariableFont_wght.ttf
+     - family: SourceSans3
+       fonts:
+         - asset: fonts/SourceSans3-VariableFont_wght.ttf
 
 
 

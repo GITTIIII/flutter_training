@@ -9,23 +9,47 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       home: Scaffold(
         backgroundColor: Colors.teal,
         body: SafeArea(
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
+          child: Row(
+            mainAxisSize: MainAxisSize.max,
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              CircleAvatar(
-                radius: 50.0,
-                backgroundImage: AssetImage("images/profile.jpg"),
-              ),
-              Text(
-                "GIT_TI",
-                style: TextStyle(
-                    fontSize: 50.0,
-                    color: Colors.white,
-                    fontWeight: FontWeight.bold),
+              Column(
+                mainAxisSize: MainAxisSize.max,
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  const CircleAvatar(
+                    radius: 50.0,
+                    backgroundImage: AssetImage("images/profile.jpg"),
+                  ),
+                  const Text(
+                    "GIT_TI",
+                    style: TextStyle(
+                        fontFamily: "PlaywriteGBS",
+                        fontSize: 30.0,
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold),
+                  ),
+                  Text(
+                    "FLUTTER DEVELOPER",
+                    style: TextStyle(
+                      fontFamily: "SourceSans3",
+                      fontSize: 20.0,
+                      color: Colors.teal[100],
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  Container(
+                    child: Row(
+                      children: [],
+                    ),
+                  )
+                ],
               ),
             ],
           ),
